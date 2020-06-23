@@ -7,7 +7,7 @@ ifdef SUPERUSER_EMBEDDED
 SUPERUSER_PACKAGE := com.android.settings
 else
 ifeq ($(SUPERUSER_PACKAGE),)
-SUPERUSER_PACKAGE := com.thirdparty.superuser
+SUPERUSER_PACKAGE := com.koushikdutta.superuser
 endif
 include $(my_path)/Superuser/Android.mk
 endif

@@ -1,0 +1,6 @@
+<resources>
+	<!-- Add required colors to here -->
+	
+	<color name="holo_red_dark">@android:color/holo_red_dark</color>
+	<color name="holo_blue_dark">@android:color/holo_blue_dark</color>
+</resources>

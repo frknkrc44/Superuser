@@ -17,7 +17,7 @@
 
         <TextView
             android:id="@+id/title"
-            style="@style/ListItemTitle"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -32,7 +32,7 @@
 
         <TextView
             android:id="@+id/summary"
-            style="@style/ListItemSummary"
+            style="@android:style/TextAppearance.Small"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".5"

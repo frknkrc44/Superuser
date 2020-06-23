@@ -96,8 +96,8 @@
         <exec executable="zip" failonerror="true" dir="libs">
           <arg value="-ry"/>
           <arg value="../bin/update.zip"/>
-          <arg value="armeabi"/>
-          <arg value="x86"/>
+          <arg value="armeabi-v7a"/>
+          <arg value="arm64-v8a"/>
         </exec>
     </target>
 
