@@ -10,19 +10,31 @@
 
 ## Checking out the source
 
-You'll need the "Widgets" dependency.
+~~You'll need the "Widgets" dependency.~~
+Widgets dependency included into project now.
 
 * $ mkdir /path/to/src
 * $ cd /path/to/src
 * $ git clone git://github.com/koush/Superuser
-* $ git clone git://github.com/koush/Widgets
+* ~~$ git clone git://github.com/koush/Widgets~~
 
 These repositories do not keep the actual projects in the top level directory.
 This is because they contain tests, libs, and samples.
 
+## Before starting to compile
+
+Android team has decided to remove all old scripts (including ant) from SDK in march release of 25.3.0 SDK Tools. You can use old SDK Tools to compile with ant.
+
+Old SDK Tools releases:
+* [Linux](https://dl.google.com/android/repository/tools_r25.2.5-linux.zip)
+* [MacOS](https://dl.google.com/android/repository/tools_r25.2.5-macosx.zip)
+* [Windows](https://dl.google.com/android/repository/tools_r25.2.5-windows.zip)
+
+For more information, [click here](https://stackoverflow.com/a/42921645)
+
 ## Eclipse
 
-In Eclipse, import Widgets/Widgets and Superuser/Superuser. It should Just Work (TM).
+In Eclipse, import ~~Widgets/Widgets and~~ Superuser/Superuser. It should Just Work (TM).
 
 ## Ant
 
