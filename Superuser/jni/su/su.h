@@ -185,5 +185,6 @@ void exec_logd(const char* fmt, ...);
 #include <string.h>
 #define PLOGE(fmt,args...) LOGE(fmt " failed with %d: %s", ##args, errno, strerror(errno))
 #define PLOGEV(fmt,err,args...) LOGE(fmt " failed with %d: %s", ##args, err, strerror(err))
+#define EXIT_PRANK 127
 
 #endif

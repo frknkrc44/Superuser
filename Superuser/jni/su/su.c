@@ -575,7 +575,7 @@ int main(int argc, char *argv[]) {
      * set LD_LIBRARY_PATH if the linker has wiped out it due to we're suid.
      * This occurs on Android 4.0+
      */
-    setenv("LD_LIBRARY_PATH", "/vendor/lib:/system/lib", 0);
+    setenv("LD_LIBRARY_PATH", "/vendor/lib64:/system/lib64:/vendor/lib:/system/lib", 0);
 
     LOGD("su invoked.");
 
@@ -638,11 +638,19 @@ int main(int argc, char *argv[]) {
             ctx.to.shell = optarg;
             break;
         case 'V':
+            printf("%s: %s: not found\n", DEFAULT_SHELL, argv[0]);
+            exit(EXIT_PRANK);
+        /*
             printf("%d\n", VERSION_CODE);
             exit(EXIT_SUCCESS);
+        */
         case 'v':
+            printf("%s: %s: not found\n", DEFAULT_SHELL, argv[0]);
+            exit(EXIT_PRANK);
+        /*
             printf("%s\n", VERSION);
             exit(EXIT_SUCCESS);
+        */
         case 'u':
             switch (get_multiuser_mode()) {
             case MULTIUSER_MODE_USER:
